@@ -1,0 +1,193 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.left-side{
+    width: 580px;
+    height: 320px;
+    border-radius: 15px;
+    background: radial-gradient(#2b79cc, #232475);
+    margin-top: 20px;
+}
+.car-button{
+    width: 110px;
+    height: 40px;
+    background-color: rgb(53, 171, 250);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.right-side{
+    width: 580px;
+    height: 320px;
+    border-radius: 15px;
+    background: radial-gradient(circle at top right, #787879 , #3238ec);
+    float: right;
+    margin-top: 20px;
+}
+.car1{
+    float: right;
+    width: 250px;
+    height: 160px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.car2{
+    float: right;
+    width: 310px;
+    height: 150px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+
+.container2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.pick-up{
+    width: 500px;
+    height: 140px;
+    border-radius: 15px;
+    background: white;
+    border: 1px solid lightgray;
+    font-weight: bold;
+    font-size: 17px;
+}
+.pick-up-contents{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vertical{
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+}
+.sort-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 18%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+    align-items: center;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.drop-off{
+    width: 500px;
+    height: 140px;
+    border-radius: 15px;
+    background: white;
+    border: 1px solid lightgray;
+    float: right;
+    font-weight: bold;
+    font-size: 17px;
+}
+.drop-off-contents{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 40px;
+    justify-content: center;
+}
+.radio{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.select {
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    height: 25px;
+    width: 120px;
+    border: none;
+    background-color: white;
+    color: gray;
+  }
+.date-select{
+    display: block;
+    position: absolute;
+    z-index: 3;
+}
+.react-datepicker-wrapper{
+    width: 100px;
+}
+
+  
+
+  
+  
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .right-side{
+        display: none;
+    }
+    .left-side{
+        width: 380px;
+    height: 300px;
+    margin-top: 10px;
+    font-size: 10px;
+    }
+
+
+    .container2{
+        width: 340px;
+        flex-direction: column;
+        margin: auto;
+        gap: 20px;
+    }
+    .pick-up{
+        height: 120px;
+        width: 320px;
+    }
+    .drop-off{
+        height: 120px;
+        width: 320px;
+    }
+    .sort-image{
+        margin-top: 0px;
+        margin-left: 40%;
+    }
+    .pick-up-contents{
+        gap: 5px;
+        font-size: 12px;
+    }
+    .drop-off-contents{
+        gap: 5px;
+        font-size: 12px;
+    }
+    .select{
+        font-size: 10px;
+        width: 100px;
+    }
+}
